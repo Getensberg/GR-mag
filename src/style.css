@@ -765,7 +765,6 @@ section {
 .carousel-slide {
   box-sizing: border-box;
   width: 100%;
-  margin-left: 10px;
 }
 
 .carousel-slide img {
