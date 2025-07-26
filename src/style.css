@@ -178,7 +178,6 @@
   }
 
 
-
 /* секция галерея с фото карусель */
 
  /* Стили для секции карусели */
@@ -257,6 +256,11 @@
                 min-width: 100%; /* 1 фото в ряд на маленьких экранах */
             }
         }
+
+
+
+      
+
 
 
  /* Стили для блока отзывов */
@@ -761,8 +765,7 @@ section {
 .carousel-slide {
   box-sizing: border-box;
   width: 100%;
-  margin-left: 0;
-    margin-right: 0;
+  margin-left: 10px;
 }
 
 .carousel-slide img {

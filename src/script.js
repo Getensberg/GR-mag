@@ -1,42 +1,74 @@
 // Инициализация скидки и корзины при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
-   const track = document.querySelector('.carousel-track');
-            const slides = Array.from(document.querySelectorAll('.carousel-slide'));
-            const nextBtn = document.querySelector('.next-btn');
-            const prevBtn = document.querySelector('.prev-btn');
-            
-            let currentIndex = 0;
-            const slideWidth = slides[0].getBoundingClientRect().width + 20; // + margin
+const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+        const nextBtn = document.querySelector('.next-btn');
+        const prevBtn = document.querySelector('.prev-btn');
+        
+        let currentIndex = 0;
 
-            // Функция перемещения карусели
-            function moveToSlide(index) {
-                track.style.transform = `translateX(-${slideWidth * index}px)`;
-                currentIndex = index;
+        // Функция для определения количества видимых слайдов
+        function getVisibleSlides() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth <= 480) {
+                return 1; // 1 фото на маленьких экранах
+            } else if (screenWidth <= 768) {
+                return 2; // 2 фото на планшетах
+            } else {
+                return 3; // 3 фото на десктопе
             }
+        }
 
-            // Кнопка "Вправо"
-            nextBtn.addEventListener('click', function() {
-                if (currentIndex < slides.length - 3) { // Показываем по 3 фото
-                    moveToSlide(currentIndex + 1);
-                } else {
-                    moveToSlide(0); // Возврат к началу
-                }
-            });
+        // Функция для получения ширины слайда
+        function getSlideWidth() {
+            return slides[0].getBoundingClientRect().width + 20; // + margin
+        }
 
-            // Кнопка "Влево"
-            prevBtn.addEventListener('click', function() {
-                if (currentIndex > 0) {
-                    moveToSlide(currentIndex - 1);
-                } else {
-                    moveToSlide(slides.length - 3); // Переход к концу
-                }
-            });
+        // Функция перемещения карусели
+        function moveToSlide(index) {
+            const slideWidth = getSlideWidth();
+            track.style.transform = `translateX(-${slideWidth * index}px)`;
+            currentIndex = index;
+        }
 
-            // Адаптация при изменении размера окна
-            window.addEventListener('resize', function() {
-                const newSlideWidth = slides[0].getBoundingClientRect().width + 20;
-                track.style.transform = `translateX(-${newSlideWidth * currentIndex}px)`;
-            });
+        // Функция для получения максимального индекса
+        function getMaxIndex() {
+            const visibleSlides = getVisibleSlides();
+            return Math.max(0, slides.length - visibleSlides);
+        }
+
+        // Кнопка "Вправо"
+        nextBtn.addEventListener('click', function() {
+            const maxIndex = getMaxIndex();
+            if (currentIndex < maxIndex) {
+                moveToSlide(currentIndex + 1);
+            } else {
+                moveToSlide(0); // Возврат к началу
+            }
+        });
+
+        // Кнопка "Влево"
+        prevBtn.addEventListener('click', function() {
+            if (currentIndex > 0) {
+                moveToSlide(currentIndex - 1);
+            } else {
+                const maxIndex = getMaxIndex();
+                moveToSlide(maxIndex); // Переход к концу
+            }
+        });
+
+        // Адаптация при изменении размера окна
+        window.addEventListener('resize', function() {
+            // Проверяем, не вышли ли мы за границы после изменения размера
+            const maxIndex = getMaxIndex();
+            if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+            }
+            moveToSlide(currentIndex);
+        });
+
+        // Инициализация
+        moveToSlide(0);
 
 // видео --------------------------------------------------------------------------------------
  // Элементы карусели
