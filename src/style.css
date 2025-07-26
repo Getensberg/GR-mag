@@ -541,6 +541,10 @@
     .video-showcase-card {
         min-width: calc(100% - 20px); /* 1 видео на мобильных */
     }
+      #videoSec {
+    display: none;
+  }
+
 }
 
 
@@ -622,9 +626,6 @@
 мобильная верстка */
 @media (max-width: 480px) {
 
-/* #app {
-  
-} */
 
 section {
   padding-left: 0;
