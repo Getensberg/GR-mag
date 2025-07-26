@@ -618,6 +618,15 @@
 мобильная верстка */
 @media (max-width: 480px) {
 
+/* #app {
+  
+} */
+
+section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
   #videoSec {
     display: none;
   }
@@ -750,7 +759,10 @@
 }
 
 .carousel-slide {
+  box-sizing: border-box;
   width: 100%;
+  margin-left: 0;
+    margin-right: 0;
 }
 
 .carousel-slide img {
@@ -790,6 +802,11 @@
 .carousel-btn {
   width: 45px;
   height: 45px;
+}
+
+.carousel-btn img {
+  width: 60px;
+  height: 60px;
 }
 
 
