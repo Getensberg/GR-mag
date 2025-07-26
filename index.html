@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRxplore</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="app">
+    <div class="header-con" id="header-white">
+
+    <div id="headerDesk" class="header-desktop">
+        <div class="head">
+          <div class="head-1">
+          <a href="#mainPage"  class="head-text">Главная</a> 
+          <a href="#ability"   class="head-text">Преимушества</a>
+          <a href="#categories"  class="head-text">Продукция</a>
+          </div>
+          <div class="head-mid">
+            <img src="/pic/GR_logo_tiff.svg" alt="logo" class="logo logo-gr">
+          </div>
+          <div class="head-2">
+            <a href="#picGalery"   class="head-text">Галерея</a>
+            <a href="#videoSec"  class="head-text">Видео</a>
+            <a href="#contact"  class="head-text">Контакты</a>
+          </div>
+        </div>
+    </div>
+    
+        <!-- Мобильная шапка -->
+    <div class="header-mob">
+      <div class="head">
+          <!-- Кнопка аккордеона -->
+          <!-- <div class="menu-btn" id="menuBtn">
+            <img src="/pic/icon account.svg">
+          </div> -->
+          <div class="head-1-mob">
+            <a href="#mainPage"  class="head-text-m">Главная</a> 
+          </div>
+
+          <!-- Логотип по центру -->
+          <div class="head-mid">
+              <img src="/pic/GR_logo_tiff.svg" alt="logo" class="logo logo-gr">
+          </div>
+
+        <div class="head-2-mob">
+            <a href="#picGalery"   class="head-text-m">Галерея</a> 
+          </div>
+      </div>
+            <!-- Аккордеон меню -->
+      <!-- <div class="accordion-menu" id="accordionMenu">
+          <ul class="menu-list">
+              <li class="menu-item">
+                  <a href="#" class="menu-link">Главная</a>
+              </li>
+              <li class="menu-item">
+                  <a href="#" class="menu-link">Каталог</a>
+              </li>
+              <li class="menu-item">
+                  <a href="#" class="menu-link">Контакты</a>
+              </li>
+              <li class="menu-item">
+                  <a href="#" class="menu-link">О нас</a>
+              </li>
+          </ul>
+      </div> -->
+
+          <!-- Overlay для мобильного меню -->
+    <!-- <div class="overlay" id="overlay"></div> -->
+    </div>
+
+    </div>
+
+    <div id="mainContent">
+
+    
+
+    <div id="mainPage">  
+      <section id="about">
+        <div class="video-block">
+          <video autoplay muted loop id="myVideo" controls>
+            <source src="/video/promo.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+  
+
+          <div class="ability-box class-box" id="ability">
+            <div class="top-ability-box">
+              <h2 class="h1-ability">Идеальные крепления для настоящих экстремалов!</h2>
+            </div>
+            <div class="bot-ability-box">
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector1.svg" class="ability-img"></div>
+                <p class="h2-ability">Мгновенное крепление — за доли секунды</p>
+                <p class="ability-text">Запатентованная система магнитной фиксации позволяет установить или снять смартфон за&nbsp;секунду, даже в&nbsp;перчатках</p>
+              </div>
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector2.svg" class="ability-img"></div>
+                <p class="h2-ability">Полноповоротное крепление 360°</p>
+                <p class="ability-text">Смартфон можно повернуть в&nbsp;любое положение&nbsp;&mdash; горизонтально, вертикально или под углом. Удобно для навигации и&nbsp;съёмки</p>
+              </div>
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector3.svg" class="ability-img"></div>
+                <p class="h2-ability">Антивибрационная система</p>
+                <p class="ability-text">Поглощает удары и&nbsp;вибрации&nbsp;&mdash; надёжная защита смартфона и&nbsp;устойчивость изображения при езде по&nbsp;бездорожью</p>
+              </div>
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector4.svg" class="ability-img"></div>
+                <p class="h2-ability">Цельнометаллический корпус</p>
+                <p class="ability-text">Прочная конструкция из&nbsp;авиационного алюминия обеспечивает долговечность и&nbsp;премиальный внешний вид</p>
+              </div>
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector5.svg" class="ability-img"></div>
+                <p class="h2-ability">Протестировано в экстремальных условиях</p>
+                <p class="ability-text">Крепления проверены в&nbsp;реальных условиях&nbsp;&mdash; на&nbsp;оффроуде, при падениях и&nbsp;сильных нагрузках</p>
+              </div>
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector6.svg" class="ability-img"></div>
+                <p class="h2-ability">Создано для искателей приключений</p>
+                <p class="ability-text">Продукция ориентирована на&nbsp;байкеров, путешественников и&nbsp;тех, кто не&nbsp;стоит на&nbsp;месте</p>
+              </div>
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector7.svg" class="ability-img"></div>
+                <p class="h2-ability">Идеально для съёмок и контента</p>
+                <p class="ability-text">Удобно для POV-съёмки, видеоблогов, экшн-камер&nbsp;&mdash; стабильность и&nbsp;быстрый доступ к&nbsp;съёмке</p>
+              </div>
+              <div class="ability-card"> 
+                <div class="ability-img-box"><img src="/pic/vector8.svg"  class="ability-img"></div>
+                <p class="h2-ability">Широкий выбор креплений</p>
+                <p class="ability-text">Подходит для мотоциклов, велосипедов, автомобилей, зеркал, рулей, тормозных бачков и&nbsp;др</p>
+              </div>
+            </div>
+     
+          </div>
+
+  
+  
+  
+  
+      </section>
+  
+      <section id="categories">
+        <h2 class="categ-h1">Для всех активностей</h2>
+        <div id="categoryList">
+          <div class="cat-card">
+            <img src="/pic/GR-MS3.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MS3</p>
+            <p class="prod-text">Держатель для телефона GR-MS3&nbsp;на руль мотоцикла/велосипеда с&nbsp;шаровой головкой и&nbsp;быстросъемным креплением, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-MS4.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MS4</p>
+            <p class="prod-text">Держатель для телефона GR-MS4&nbsp;на руль мотоцикла/велосипеда с&nbsp;шаровой головкой и&nbsp;быстросъемным креплением, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-MT2.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MT2</p>
+            <p class="prod-text">Держатель для телефона GR-MT2&nbsp;на руль мотоцикла/велосипеда с&nbsp;шаровой головкой и&nbsp;креплением под шестигранник, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-MT6.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MT6</p>
+            <p class="prod-text">Держатель для телефона GR-MT6&nbsp;на руль мотоцикла/велосипеда с&nbsp;вибродемпфером и&nbsp;креплением под шестигранник, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-MT4.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MT4</p>
+            <p class="prod-text">Держатель для телефона GR-MT4&nbsp;на руль мотоцикла/велосипеда с&nbsp;вибродемпфером и&nbsp;угловым креплением под шестигранник, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-MT5.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MT5</p>
+            <p class="prod-text">Держатель для телефона GR-MT5&nbsp;на руль мотоцикла/велосипеда с&nbsp;вибродемпфером и&nbsp;быстросъемным креплением, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-MT7.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MT7</p>
+            <p class="prod-text">Держатель для телефона GR-MT7&nbsp;с вибродемпфером и&nbsp;креплением в&nbsp;рулевой вал мотоцикла, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-M10.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-M10</p>
+            <p class="prod-text">Держатель для телефона GR-MT10&nbsp;на руль мотоцикла/велосипеда с&nbsp;вибродемпфером и&nbsp;угловым креплением под шестигранник, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                    <div class="cat-card">
+            <img src="/pic/GR-M10D.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-M10D</p>
+            <p class="prod-text">Держатель для телефона GR-MT10D&nbsp;на руль мотоцикла/велосипеда с&nbsp;вибродемпфером и&nbsp;угловым креплением под шестигранник, хром</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                              <div class="cat-card">
+            <img src="/pic/GR-MT11.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MT11</p>
+            <p class="prod-text">Держатель для телефона GR-MT11&nbsp;на руль мотоцикла/велосипеда с&nbsp;вибродемпфером и&nbsp;угловым креплением под шестигранник, черный</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+                              <div class="cat-card">
+            <img src="/pic/GR-MT11D.png" alt="картинка продукта" class="prod-image">
+            <p class="cat-name">GR-MT11D</p>
+            <p class="prod-text">Держатель для телефона GR-MT11D&nbsp;на руль мотоцикла/велосипеда с&nbsp;вибродемпфером и&nbsp;угловым креплением под шестигранник, хром</p>
+            <div class="prod-btn-box"><div class="prod-btn">Подробнее</div></div>
+          </div>
+          <div class="cat-card">
+            
+            <!-- пустой блок для выравнивания -->
+          </div>
+          
+           
+         
+        </div>
+      </section>
+    </div>
+
+     <section id="picGalery" class="carousel-section">
+      <h2>Наши фото</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- Ваши фото -->
+                <div class="carousel-slide">
+                    <img src="/pic/p1.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p2.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p3.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p4.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p5.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p7.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p8.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p9.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p10.jpg" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p11.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/pic/p12.webp" class="carousel-pic" alt="Фото из галереи">
+                </div>
+                </div>
+            </div>
+
+        <!-- Кнопки навигации -->
+        <div class="carousel-nav">
+            <button class="carousel-btn prev-btn"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="sc-15rbleu-4 jqFwnT reputon-swiper-button-prev"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z" fill="currentColor"></path></g></svg></button>
+            <button class="carousel-btn next-btn"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="sc-15rbleu-5 jEiPHS reputon-swiper-button-next"><g id="SVGRepo_bgCarrier5" stroke-width="0"></g><g id="SVGRepo_tracerCarrier5" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier5"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="currentColor"></path></g></svg></button>
+        </div>
+    </section>
+
+
+<section class="reviews-section">
+        <h2 class="reviews-title">Отзывы наших клиентов</h2>
+        
+        <div class="reviews-container">
+            <!-- Карточка отзыва 1 -->
+            <div class="review-card">
+                <img src="/pic/ava1.png" alt="Аватар клиента" class="review-avatar">
+                <h3 class="review-name">Алексей М.</h3>
+                <p class="review-text">
+Отличное крепление — надёжное, как скала! Держит телефон мёртво даже на жёстком бездорожье. Установка простая, материалы премиум-класса. Идеальный выбор для тех, кто ценит качество и безопасность.
+                </p>
+            </div>
+            
+            <!-- Карточка отзыва 2 -->
+            <div class="review-card">
+                <img src="/pic/ava2.png" alt="Аватар клиента" class="review-avatar">
+                <h3 class="review-name">Сергей С.</h3>
+                <p class="review-text">
+Крепление на высшем уровне! Ничего не болтается, телефон в полной безопасности даже на кочках. Стильно выглядит, сделано добротно. Настоящее премиум-качество!
+                </p>
+            </div>
+            
+            <!-- Карточка отзыва 3 -->
+            <div class="review-card">
+                <img src="/pic/ava3.png" alt="Аватар клиента" class="review-avatar">
+                <h3 class="review-name">Кирилл М.</h3>
+                <p class="review-text">
+Надёжность впечатляет — не страшны ни тряска, ни дождь. Удобно ставить и снимать телефон. Отличный выбор для активных велосипедистов, ценящих комфорт и безопасность.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="videoSec" class="video-showcase-section">
+        <h2 style="text-align: center; margin-bottom: 30px;">Наши видео</h2>
+        
+        <div class="video-showcase-wrapper">
+            <div class="video-showcase-slider">
+                <!-- Видео 1 -->
+                <div class="video-showcase-card" data-video-index="0">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v1.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Видео 2 -->
+                <div class="video-showcase-card" data-video-index="1">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v2.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Видео 3 -->
+                <div class="video-showcase-card" data-video-index="2">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v3.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Видео 4 -->
+                <div class="video-showcase-card" data-video-index="3">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v4.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Видео 5 -->
+                <div class="video-showcase-card" data-video-index="4">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v5.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Видео 6 -->
+                <div class="video-showcase-card" data-video-index="5">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v6.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Видео 7 -->
+                <div class="video-showcase-card" data-video-index="6">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v7.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Видео 8 -->
+                <div class="video-showcase-card" data-video-index="7">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v8.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>           
+                <!-- Видео 9 -->
+                <div class="video-showcase-card" data-video-index="8">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v9.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Видео 10 -->
+                <div class="video-showcase-card" data-video-index="9">
+                    <div class="video-container">
+                        <video>
+                            <source src="/video/v10.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" class="sc-jc5ygt-6 ipVnfr reputon-play-icon"><g fill="currentColor" fill-rule="evenodd"><path d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></g></svg>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+<!--кнопки навигации карусели -->
+<div class="video-showcase-arrows">
+    <button class="video-showcase-navbtn video-slider-prev">
+<svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="sc-15rbleu-4 jqFwnT reputon-swiper-button-prev"><g id="SVGRepo_bgCarrier3" stroke-width="0"></g><g id="SVGRepo_tracerCarrier3" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier3"><path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z" fill="currentColor"></path></g></svg>
+    </button>
+    <button class="video-showcase-navbtn video-slider-next">
+<svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="sc-15rbleu-5 jEiPHS reputon-swiper-button-next"><g id="SVGRepo_bgCarrier1" stroke-width="0"></g><g id="SVGRepo_tracerCarrier1" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier1"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="currentColor"></path></g></svg>
+    </button>
+</div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="video-modal" id="videoModal">
+        <span class="close-modal">&times;</span>
+        <div class="video-modal-content">
+            <video class="modal-video-player" controls></video>
+        </div>
+    </div>
+
+
+    <section id="contact">
+      <h2 class="con-h2">Поддержка</h2>
+      <div class="contact-container">
+              <!-- Блок с благодарностью -->
+        <div id="thankYouBlock" style="display: none;">
+          <div class="th-box" >
+            <h2 class="th-h2">Благодарим за заявку!</h2>
+            <p class="th-text">Данные успешно отправлены, скоро мы&nbsp;свяжемся с&nbsp;вами</p>
+          </div>
+          <!-- <p class="contact-pol">Нажимая на кнопку «Отправить», вы принимаете условия <a class="contact-pol-link document-link">политики конфиденциальности</a></p> -->
+        </div>
+        <div id="contactFormBlock" class="container-contact-box">
+          <div class="contact-box con-box-1">
+          <p class="con-h3">Напишите свой вопрос и мы свяжемся с вами</p>
+          <form id="feedbackForm">
+              <input class="contact-inp" type="text" id="name" name="name" required placeholder="Имя">
+              <input class="contact-inp" type="tel" id="tel" name="tel" required placeholder="Телефон">
+              <textarea class="contact-textarea" id="message" name="message" rows="5" placeholder="Сообщение"></textarea>
+            <div class="sbm-btn-box"><button type="submit" class="submit-btn">Отправить</button></div>
+            <div id="formMessage"></div>
+          </form>
+        </div>
+        </div>
+        <div class="contact-box con-box-2">
+          <p class="con-name">Контакты</p>
+          <div class="logo-text-box">
+            <img src="/pic/icon tel.png" class="con-img">
+            <a class="con-text-2">+7 993 615 28 97 (пн-пт 10:00-18:00)</a>
+          </div>
+          <div class="logo-text-box">
+            <img src="/pic/icon email.png" class="con-img">
+            <a class="con-text-2">info@magssory.com</a>
+          </div>
+          <div class="logo-text-box">
+            <img src="/pic/icon pin.png" class="con-img">
+            <span class="con-text-2">Москва, ул. Намёткина, дом 8/1, офис 402</span>
+          </div>
+          <div class="logo-text-box-2">
+            <img src="/pic/icon pin.png" class="con-img">
+            <div class="spb-text-box"><span class="con-text-2">Санкт-Петербург, Красногвардейская площадь, 3 Лит. Е, Дизайн Дистрикт DAA, офис Е3-231</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="contact-pol-box"><p class="contact-pol">Нажимая на кнопку «Отправить», вы принимаете условия <a class="contact-pol-link document-link">политики конфиденциальности</a></p></div> -->
+      <!-- временно убрал политику, тк придется переделать кнопки в шапке и отрисовать новую страницу -->
+
+
+    </section>
+    
+    </div>
+    
+    <footer>
+      <div class="foot-con">
+        <img src="/pic/GR_logo_3.svg" alt="logo" class="footer-main-logo">
+        <div class="foot-box">
+          <div class="foot-info">
+            <p class="foot-text">ООО «Мэгссори»</p>
+            <a tel="tel+79936152897" class="foot-text-link">+7 993 615 28 97</a>
+            <a href="mailto:info@magssory.com" class="foot-text-link">info@magssory.com</a>
+          </div>
+          <div class="foot-nav">
+            <a href="#mainPage"  class="foot-id-link ">Главная</a> 
+            <a href="#ability" class="foot-id-link ">Преимушества</a>
+            <a href="#categories"  class="foot-id-link ">Продукция</a>
+            <a href="#picGalery"  class="foot-id-link ">Галерея</a>
+            <a  href="#videoSec" class="foot-id-link ">Видео</a>
+            <a href="#contact" class="foot-id-link ">Контакты</a>
+          </div>
+          <div class="foot-links">
+            <a href="https://magssory.com/" target="_blank"><div class="link-box"><img src="/pic/web3.png" alt="logo" class="footer-logo"><a href="https://magssory.com/" target="_blank" class="footer-logo-link" >Website</a></div></a>
+            <a href="https://t.me/magssory_official" target="_blank"><div class="link-box"><img src="/pic/tg-logo.svg" alt="logo" class="footer-logo"><a href="https://t.me/magssory_official" target="_blank" class="footer-logo-link" >Telegram</a></div></a>
+            <a href="https://rutube.ru/channel/43640282/" target="_blank"><div class="link-box"><img src="/pic/rutube-logo.svg" alt="logo" class="footer-logo"><a href="https://rutube.ru/channel/43640282/" target="_blank" class="footer-logo-link" >Rutube</a></div></a>
+            <a href="https://vk.com/magssory" target="_blank"><div class="link-box"><img src="/pic/vk-logo.svg" alt="logo" class="footer-logo"><a href="https://vk.com/magssory" target="_blank" class="footer-logo-link" >ВКонтакте</a></div></a>
+            <a href="https://www.youtube.com/@magssory_official" target="_blank"><div class="link-box"><img src="/pic/youtube-logo.svg" alt="logo" class="footer-logo"><a href="https://www.youtube.com/@magssory_official" target="_blank" class="footer-logo-link" >YouTube </a></div></a>
+            <a href="https://dzen.ru/magssory" target="_blank"><div class="link-box"><img src="/pic/dzen-logo.svg" alt="logo" class="footer-logo"><a href="https://dzen.ru/magssory" target="_blank" class="footer-logo-link" >Дзен</a></div></a>
+          </div>
+        </div>
+        <!-- <div class="foot-ur">
+          <a class="footer-ur-text document-link">Политика конфиденциальности</a>
+          <a  class="footer-ur-text document-link">Договор оферты</a>
+          временно убрал, надо менять функционал кнопок и отрисовывать страницы
+        </div> -->
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+<!-- трансфер страница -->
+
+<section id="trans" class="transfer">
+  <div class="trans-con">
+      <div class="trans-box">
+      <div class="transfer-id">
+    <img src="/pic/GR-logo-transfer.webp" class="transfer-logo">
+    <p class="transfer-text">Для получения более подобной информации о&nbsp;товаре вы&nbsp;будете перемещены на&nbsp;сайт
+официального представителя
+GR&nbsp;в&nbsp;России&nbsp;&mdash; компании Magssory</p>
+  </div>
+  <div class="transfer-btns">
+    <div class="trans-class-btn"><a class="trans-link" href="https://magssory.com/" target="_blank">Перейти на сайт</a></div>
+    <div id="transBack" class="trans-btn trans-class-btn">Назад</div>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="/src/script.js"></script>
+</body>
+</html>
