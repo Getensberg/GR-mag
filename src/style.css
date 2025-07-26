@@ -229,7 +229,7 @@
 
         .carousel-btn {
             pointer-events: auto; /* Возвращаем кликабельность */
-            background: rgba(255, 255, 255, 0.7);
+            /* background: rgba(255, 255, 255, 0.7); */
             border: none;
             width: 40px;
             height: 40px;
@@ -241,9 +241,9 @@
             transition: background-color 0.3s;
         }
 
-        .carousel-btn:hover {
+        /* .carousel-btn:hover {
             background: rgba(255, 255, 255, 0.9);
-        }
+        } */
 
         /* Адаптивность */
         @media (max-width: 768px) {
@@ -617,6 +617,10 @@
 /* 
 мобильная верстка */
 @media (max-width: 480px) {
+
+  #videoSec {
+    display: none;
+  }
 
 .trans-box {
     margin-top: 10%;
